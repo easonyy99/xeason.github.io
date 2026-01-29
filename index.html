@@ -542,6 +542,10 @@
       background-image: 
         radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 75% 75%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
     }
     
     .tower-selection {
@@ -556,18 +560,23 @@
     
     .game-container {
       position: relative;
-      width: 100%;
+      width: 100vw;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
     }
     
     .map-container {
       position: relative;
-      width: 100%!important;
-      height: 100%!important;
+      width: 100vw!important;
+      height: 100vh!important;
       overflow: hidden;
+      margin: 0;
+      padding: 0;
     }
     
     .map-scroll-container {
@@ -1981,7 +1990,7 @@
       
       <div class="game-content" style="position: absolute; top: 60px; left: 0; width: 100%; height: calc(100% - 60px); display: flex;">
         <div class="map-container" style="flex: 1; position: relative; overflow: hidden;">
-          <canvas id="game-canvas" width="1200" height="800"></canvas>
+          <canvas id="game-canvas" width="1920" height="1080"></canvas>
         </div>
         
         <!-- 右侧炮塔选择面板 -->
